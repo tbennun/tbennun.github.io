@@ -1,1 +1,496 @@
-Hello world
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Android Chrome theme color -->
+    <meta name="theme-color" content="#ADE0FF">
+
+
+    <title>Tal Ben-Nun</title>
+
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-69654671-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </head>
+
+  <body class="grey lighten-3 bgg">
+    <header>
+    </header>
+    <main>
+      <div class="row">
+        <div class="col s12 m9 l10">
+          <div id="home" class="section scrollspy">
+            <div class="row">
+
+              <div class="col s8 m9 l9">
+                <h4 class="header">Tal Ben-Nun</h4>
+                <h5 class="header light">Computer Scientist</h5>
+                <b>Research staff in the <a href="https://computing.llnl.gov/casc">Center for Applied Scientific Computing</a> at Lawrence Livermore National Laboratory.</b><br />
+                Former member of the <a href="https://spcl.inf.ethz.ch">Scalable Parallel Computing Laboratory</a> at ETH Zurich.<br />
+                Former member of the <a href="http://www.mosix.org">Distributed Computing</a> and the <a href="https://scholars.huji.ac.il/uriraviv">X-ray scattering</a> labs at the Hebrew University of Jerusalem.<br />
+                Former member of the <a href="https://cs.huji.ac.il/labs/parallel">Parallel Systems Lab</a> at the Hebrew University of Jerusalem.<br />
+              </div>
+              <div class="col s4 m3 l3">
+                <br />
+                <img height="150px" src="me.jpg" />
+              </div>
+            </div>
+            <br />
+            <a href="https://github.com/tbennun"><img src="icons/github.svg" alt="GitHub Profile" height="32px" title="GitHub Profile (tbennun)" /></a> 
+            <a href="http://scholar.google.com/citations?user=Q-djIUcAAAAJ"><img src="icons/gscholar.svg" height="32px" alt="Google Scholar Profile" title="Google Scholar Profile" /></a>
+            <a href="https://www.linkedin.com/in/tal-ben-nun-4301578/"><img src="icons/linkedin.svg" height="32px" alt="LinkedIn Profile" title="LinkedIn Profile" /></a>
+            <hr />
+          </div>
+
+		  <div id="research" class="section scrollspy">
+		    <h5 class="header">Research</h5>
+			<div class="rcards">
+			  <div class="card research-card">
+				<div class="activator waves-effect waves-block waves-light">
+				  <img class="activator rcard-image" src="img/sdfg.png">
+				</div>
+				<div class="card-content rcard-contents">
+				  <span class="card-title activator grey-text text-darken-4">Data-Driven Programming Models</span>
+				  <p><a class="activator" href="#datadriven">Read more...</a></p>
+				</div>
+				<div class="card-reveal rcard-reveal">
+				  <span class="card-title grey-text text-darken-4"><i class="material-icons close-button">close</i></span>
+				  <p class="rcard-text" style="margin-bottom: -10px;">Data movement minimization has become the most important factor in performance optimization. We make performance programming easier by rethinking existing paradigms, via new representations and workflows that expose optimization opportunities and utilize hardware efficiently.</p>
+				  <ul class="rcardex">
+				  <li>DaCe (<a href="https://arxiv.org/pdf/1902.10345">SC'19</a>, <a href="https://arxiv.org/pdf/1912.10024">GB'19</a>, <a href="https://arxiv.org/pdf/2010.15218">CGO'21</a>, <a href="https://arxiv.org/pdf/2107.00555">SC'21</a>, <a href="https://arxiv.org/pdf/2112.11879">ICS'22</a>, <a href="https://arxiv.org/pdf/2207.07433">SC'22a</a>, <a href="https://arxiv.org/pdf/2206.08301">SC'22b</a>, <a href="http://www.dace.cc/">Website</a>, <a href="https://github.com/spcl/dace">Code</a>)</li>
+				  <li>Groute (<a href="papers/groute-ppopp17.pdf">PPoPP'17</a>, <a href="papers/groute-topc20.pdf">TOPC'20</a>, <a href="https://github.com/groute/groute">Code</a>)</li>
+				  <li>MAPS (<a href="http://dl.acm.org/authorize?N83410">TACO'15</a>, <a href="https://dl.acm.org/doi/10.1145/2807591.2807611">SC'15</a>, <a href="https://www.cs.huji.ac.il/project/maps/">Website</a>, <a href="https://github.com/maps-gpu/maps">Code</a>)</li>
+				  <li>VirtualCL (<a href="https://ieeexplore.ieee.org/abstract/document/5613086">PPAAC'10</a>)</li>
+				  </ul>
+				</div>
+			  </div>
+			  <div class="card research-card">
+				<div class="activator waves-effect waves-block waves-light">
+				  <img class="activator rcard-image" src="img/programl.png">
+				</div>
+				<div class="card-content rcard-contents">
+				  <span class="card-title activator grey-text text-darken-4">Learnable Code Representations</span>
+				  <p><a class="activator" href="#ncc">Read more...</a></p>
+				</div>
+				<div class="card-reveal rcard-reveal">
+				  <span class="card-title grey-text text-darken-4"><i class="material-icons close-button">close</i></span>
+				  <p class="rcard-text">Machine learning on code can be challenging if it is treated as text. We create new intermediate representations of code that can be used for automatic comprehension and performance optimization.</p>
+				  <ul class="rcardex">
+				  <li>ProGraML (<a href="http://proceedings.mlr.press/v139/cummins21a/cummins21a.pdf">ICML'21</a>, <a href="https://github.com/ChrisCummins/ProGraML">Code</a>)</li>
+				  <li>Neural Code Comprehension, inst2vec (<a href="https://arxiv.org/pdf/1806.07336.pdf">NeurIPS'18</a>, <a href="https://github.com/spcl/ncc">Code</a>)</li>
+				  </ul>
+				</div>
+			  </div>
+			  <div class="card research-card">
+				<div class="activator waves-effect waves-block waves-light">
+				  <img class="activator rcard-image" src="img/ddl.png">
+				</div>
+				<div class="card-content rcard-contents">
+				  <span class="card-title activator grey-text text-darken-4">Large-Scale Machine Learning</span>
+				  <p><a class="activator" href="#largescaleml">Read more...</a></p>
+				</div>
+				<div class="card-reveal rcard-reveal">
+				  <span class="card-title grey-text text-darken-4"><i class="material-icons close-button">close</i></span>
+				  <p class="rcard-text">Scaling machine learning to large clusters poses challenges, from I/O to optimizers. We tackle communication, neural network architectures, and reproducibility - from theory to practice.</p>
+				  <ul class="rcardex">
+				  <li>DaCeML (<a href="https://arxiv.org/pdf/2110.10802">ICS'22</a>, <a href="https://github.com/spcl/daceml">Code</a>)</li>
+				  <li>Partial Collective Communication (<a href="https://arxiv.org/pdf/1908.04207">PPoPP'20</a>, <a href="https://arxiv.org/pdf/2005.00124">TPDS'20</a>)</li>
+				  <li>Deep Learning Reviews (<a href="https://www.jmlr.org/papers/volume22/21-0366/21-0366.pdf">Sparsity</a>, <a href="https://arxiv.org/pdf/1802.09941">Parallel and Distributed Computing</a>)</li>
+				  <li>Deep500 (<a href="https://spcl.inf.ethz.ch/Publications/.pdf/deep500_ipdps19.pdf">IPDPS'19</a>, <a href="https://github.com/deep500/deep500">Code</a>)</li>
+				  </ul>
+				</div>
+			  </div>
+			  <div class="card research-card">
+				<div class="activator waves-effect waves-block waves-light">
+				  <img class="activator rcard-image" src="img/ens10.png">
+				</div>
+				<div class="card-content rcard-contents">
+				  <span class="card-title activator grey-text text-darken-4">Deep Learning for Scientific Computing</span>
+				  <p><a class="activator" href="#dlsc">Read more...</a></p>
+				</div>
+				<div class="card-reveal rcard-reveal">
+				  <span class="card-title grey-text text-darken-4"><i class="material-icons close-button">close</i></span>
+				  <p class="rcard-text">Using deep neural networks and creating datasets to improve scientific computing applications. Examples include improving weather uncertainty quantification and deforestation prediction.</p>
+				  <ul class="rcardex">
+				  <li>Ensemble weather forecasts (<a href="https://arxiv.org/pdf/1911.00630.pdf">MLPS'19</a>, <a href="http://spcl.inf.ethz.ch/Publications/.pdf/rsta-weather-postproc.pdf">RSTA'21</a>, <a href="https://www.github.com/spcl/deep-weather">Code</a>)</li>
+				  <li><a href="https://www.maelstrom-eurohpc.eu/">The MAELSTROM project</a></li>
+				  </ul>
+				</div>
+			</div>
+		  </div>
+		  </div>
+          
+
+          <div id="software" class="section scrollspy">
+            <h5 class="header">Software</h5>
+            <ul>
+              <li>
+                <a href="https://www.github.com/spcl/dace">DaCe</a> - Data-Centric parallel programming framework for CPUs, GPUs, and FPGAs.
+              </li>            
+              <li>
+                <a href="https://www.deep500.org/">Deep500</a> - An HPC Deep Learning benchmark, competition, and meta-framework.
+              </li>
+              <li>
+                <a href="http://www.cs.huji.ac.il/project/maps/">MAPS</a> - Device-level GPU memory abstraction and code optimization library.
+              </li>
+              <li>
+                <a href="https://www.github.com/tbennun/cudnn-training/">CUDNN Training</a>
+                - A CUDNN-based minimal deep learning training code sample using LeNet.
+              </li>
+                <li>
+                <a href="https://www.github.com/tbennun/mgbench/">MGBench</a>
+                - Multi-GPU computing benchmark suite.
+              </li>
+              <li>
+                <a href="https://www.github.com/tbennun/ceres-windows/">ceres-windows</a>
+                - Windows port of the <a href="http://www.ceres-solver.org/">ceres-solver</a> nonlinear
+                optimization library.
+              </li>
+              <li>
+                <a href="http://www.cs.huji.ac.il/labs/parallel/klogger/" target="_top">Klogger</a> - A Linux Kernel Logging Framework.
+              </li>
+              <li>
+                <a href="#">X+</a> - Numerical Analysis Tool for Solution and Powder Scattering
+                Structure Factor of Macromolecular Systems.
+              </li>
+            </ul>
+          </div>
+
+          <div id="pubs" class="section scrollspy">
+            <h5 class="header">Selected Publications</h5> (full list at <a href="http://scholar.google.com/citations?user=Q-djIUcAAAAJ">Google Scholar</a>)
+
+            <ul>
+       
+                <li><p>
+                <a href="https://arxiv.org/pdf/2205.04148">Productive Performance Engineering for Weather and Climate Modeling with Python</a><br />
+                <b>Tal Ben-Nun</b>, Linus Groner, Florian Deconinck, Tobias Wicky, Eddie Davis, Johann Dahm, Oliver Elbert, Rhea George, Jeremy McGibbon, Lukas Tr&#252;mper, Elynn Wu, Oliver Fuhrer, Thomas Schulthess, Torsten Hoefler.<br />
+                In <i>the IEEE/ACM International Conference for High Performance Computing, Networking, Storage and Analysis (SC22)</i>, November 2022.<br />
+                </p></li>
+
+                <li><p>
+                <a href="https://arxiv.org/pdf/2207.07433">Boosting Performance Optimization with Interactive Data Movement Visualization</a><br />
+                Philipp Schaad, <b>Tal Ben-Nun</b>, Torsten Hoefler.<br />
+                In <i>the IEEE/ACM International Conference for High Performance Computing, Networking, Storage and Analysis (SC22)</i>, November 2022.<br />
+                </p></li>
+
+				<li><p>
+                <a href="https://arxiv.org/pdf/2206.08301">Deinsum: Practically I/O Optimal Multilinear Algebra</a><br />
+                Alexandros Nikolaos Ziogas, Grzegorz Kwasniewski, <b>Tal Ben-Nun</b>, Timo Schneider, Torsten Hoefler.<br />
+                In <i>the IEEE/ACM International Conference for High Performance Computing, Networking, Storage and Analysis (SC22)</i>, November 2022.<br />
+                </p></li>
+				
+				<li><p>
+                <a href="https://arxiv.org/pdf/2110.10802">A Data-Centric Optimization Framework for Machine Learning</a><br />
+                Oliver Rausch*, <b>Tal Ben-Nun*</b>, Nikoli Dryden, Andrei Ivanov, Shigang Li, Torsten Hoefler.<br />
+                In <i>the ACM International Conference on Supercomputing (ICS)</i>, June 2022.<br />
+                </p></li>
+				
+				<li><p>
+                <a href="https://arxiv.org/pdf/2112.11879">Lifting C semantics for dataflow optimization</a><br />
+                Alexandru Calotoiu, <b>Tal Ben-Nun</b>, Grzegorz Kwasniewski, Johannes de Fine Licht, Timo Schneider, Philipp Schaad, Torsten Hoefler.<br />
+                In <i>the ACM International Conference on Supercomputing (ICS)</i>, June 2022.<br />
+                </p></li>
+				
+                <li><p>
+                <a href="https://arxiv.org/pdf/2107.00555">Productivity, Portability, Performance: Data-Centric Python</a><br />
+                Alexandros Nikolaos Ziogas, Timo Schneider, <b>Tal Ben-Nun</b>, Alexandru Calotoiu, Tiziano De Matteis, Johannes de Fine Licht, Luca Lavarini, Torsten Hoefler.<br />
+                In <i>the IEEE/ACM International Conference for High Performance Computing, Networking, Storage and Analysis (SC21)</i>, November 2021.<br />
+                </p></li>
+
+                <li><p>
+                <a href="https://arxiv.org/pdf/2108.09337">On the Parallel I/O Optimality of Linear Algebra Kernels: Near-Optimal Matrix Factorizations</a><br />
+                Grzegorz Kwasniewski, Marko Kabic, <b>Tal Ben-Nun</b>, Alexandros Nikolaos Ziogas, Jens Eirik
+    Saethre, Andr&eacute; Gaillard, Timo Schneider, Maciej Besta, Anton Kozhevnikov, Joost VandeVondele, Torsten Hoefler.<br />
+                In <i>the IEEE/ACM International Conference for High Performance Computing, Networking, Storage and Analysis (SC21)</i>, November 2021.<br />
+                </p></li>
+
+                <li><p>
+                <a href="https://arxiv.org/pdf/2101.08734">Clairvoyant Prefetching for Distributed Machine Learning I/O</a><br />
+                Nikoli Dryden, Roman B&#246;hringer, <b>Tal Ben-Nun</b>, Torsten Hoefler.<br />
+                In <i>the IEEE/ACM International Conference for High Performance Computing, Networking, Storage and Analysis (SC21)</i>, November 2021.<br />
+                </p></li>
+                               
+                <li><p>
+                <a href="https://www.jmlr.org/papers/volume22/21-0366/21-0366.pdf">Sparsity in Deep Learning: Pruning and growth for efficient inference and training in neural networks</a><br />
+                Torsten Hoefler, Dan Alistarh, <b>Tal Ben-Nun</b>, Nikoli Dryden, Alexandra Peste.<br />
+                In <i>the Journal of Machine Learning Research (JMLR)</i>, September 2021.<br />
+                </p></li>
+                
+                <li><p>
+                <a href="https://arxiv.org/pdf/2105.07203">Pebbles, Graphs, and a Pinch of Combinatorics: Towards Tight I/O Lower Bounds for Statically Analyzable Programs</a><br />
+                Grzegorz Kwasniewski, <b>Tal Ben-Nun</b>, Lukas Gianinazzi, Alexandru Calotoiu, Timo Schneider, Alexandros Nikolaos Ziogas, Maciej Besta, Torsten Hoefler.<br />
+                In <i>the 33rd ACM Symposium on Parallelism in Algorithms and Architectures (SPAA '21)</i>, July 2021.<br />
+                </p></li>
+                
+                <li><p>
+                <a href="http://proceedings.mlr.press/v139/cummins21a/cummins21a.pdf">ProGraML: Graph-based Deep Learning for Program Optimization and Analysis</a><br />
+                Chris Cummins, Zacharias Fisches, <b>Tal Ben-Nun</b>, Torsten Hoefler, Michael O'Boyle, Hugh Leather.<br />
+                In <i>the Thirty-eighth International Conference on Machine Learning (ICML)</i>, July 2021.<br />
+                </p></li>
+
+                <li><p>
+                <a href="http://www.unixer.de/publications/img/npbench-authorversion.pdf">NPBench: A Benchmarking Suite for High-Performance NumPy</a><br />
+                Alexandros Nikolaos Ziogas, <b>Tal Ben-Nun</b>, Timo Schneider, Torsten Hoefler.<br />
+                In <i>the ACM International Conference on Supercomputing (ICS)</i>, June 2021.<br />
+                </p></li>
+
+
+                <li><p>
+                <a href="https://arxiv.org/pdf/2007.00072">Data Movement Is All You Need: A Case Study on Optimizing Transformers</a><br />
+                Andrei Ivanov, Nikoli Dryden, <b>Tal Ben-Nun</b>, Shigang Li, Torsten Hoefler.<br />
+                In <i>the Fourth Conference on Machine Learning and Systems (MLSys)</i>, April 2021.<br />
+                <b>Outstanding paper award.</b><br />
+                </p></li>
+
+                <li><p>
+                <a href="https://arxiv.org/pdf/2010.15218">StencilFlow: Mapping Large Stencil Programs to Distributed Spatial Computing Systems</a><br />
+                Johannes de Fine Licht, Andreas Kuster, Tiziano De Matteis, <b>Tal Ben-Nun</b>, Dominic Hofer, Torsten Hoefler.<br />
+                In <i>the International Symposium on Code Generation and Optimization (CGO)</i>, February 2021.<br />
+                </p></li>
+
+                <li><p><a href="https://arxiv.org/pdf/2005.08748">Deep Learning for Post-Processing Ensemble Weather Forecasts</a><br />
+                Peter Gr&#246;nquist, Chengyuan Yao, <b>Tal Ben-Nun</b>, Nikoli Dryden, Peter Dueben, Shigang Li, Torsten Hoefler.<br />
+                In <i>Philosophical Transactions of The Royal Society A</i>, February 2021.<br />
+                </p></li>
+                
+                <li><p>
+                <a href="https://ieeexplore.ieee.org/abstract/document/9309042">Workflows are the New Applications: Challenges in Performance, Portability, and Productivity</a><br />
+                <b>Tal Ben-Nun</b>, Todd Gamblin, D. S. Hollman, Hari Krishnan, Chris J. Newburn.<br />
+                In <i>the IEEE/ACM International Workshop on Performance, Portability and Productivity in HPC (P3HPC)</i>, November 2020.<br />
+                </p></li>
+
+              <li>
+                <p>
+                  <a href="https://arxiv.org/abs/1901.09335">Augment Your Batch: Improving Generalization Through Instance Repetition</a><br />
+                  Elad Hoffer, <b>Tal Ben-Nun</b>, Itay Hubara, Niv Giladi, Torsten Hoefler, Daniel Soudry.<br />
+                  In <i>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</i>, June 2020.<br />
+                </p>
+              </li>
+            
+              <li>
+                <p>
+                  <a href="papers/groute-topc20.pdf">Groute: Asynchronous multi-GPU programming model with applications to large-scale graph processing</a><br />
+                  <b>Tal Ben-Nun</b>, Michael Sutton, Sreepathi Pai, Keshav Pingali.<br />
+                  In <i>ACM Transactions on Parallel Computing (TOPC)</i>, June 2020.<br />
+                </p>
+              </li>
+            
+            
+            <a href="https://arxiv.org/pdf/1908.04207">Taming Unbalanced Training Workloads in Deep Learning with Partial Collective Operations</a><br />
+Shigang Li, <b>Tal Ben-Nun</b>, Salvatore Di Girolamo, Dan Alistarh, Torsten Hoefler.<br />
+                  In <i>Proceedings of the 25th Symposium on Principles and Practice of Parallel Programming (PPoPP'20)</i>, February 2020.<br />
+                  <b>Best paper nominee.</b><br />
+                </p>
+              </li>
+              
+              <li>
+                <p>
+                  <a href="https://spcl.inf.ethz.ch/Publications/.pdf/deep500_ipdps19.pdf">A Modular Benchmarking Infrastructure for High-Performance and Reproducible Deep Learning</a><br />
+                  <b>Tal Ben-Nun</b>, Maciej Besta, Simon Huber, Alexandros Nikolaos Ziogas, Daniel Peter, Torsten Hoefler.<br />
+                  In <i>Proceedings of the 33rd IEEE International Parallel &amp; Distributed Processing Symposium (IPDPS 2019)</i>, May 2019.<br />
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <a href="https://arxiv.org/abs/1802.09941">Demystifying Parallel and Distributed Deep Learning: An In-Depth Concurrency Analysis</a><br />
+                  <b>Tal Ben-Nun</b> and Torsten Hoefler.<br />
+                  In <i>ACM Computing Surveys (CSUR)</i>, March 2019.<br />
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <a href="https://arxiv.org/abs/1902.10345">Stateful Dataflow Multigraphs: A Data-Centric Model for High-Performance Parallel Programs</a><br />
+                  <b>Tal Ben-Nun</b>, Johannes de Fine Licht, Alexandros Nikolaos Ziogas, Timo Schneider, Torsten Hoefler.<br />
+                  In <i>Supercomputing (SC'19)</i>, November 2019.<br />
+                </p>
+              </li>
+              
+              <li>
+                <p>
+                  <a href="https://arxiv.org/pdf/1912.10024">A Data-Centric Approach to Extreme-Scale Ab Initio Dissipative Quantum Transport Simulations</a><br />
+                  Alexandros Nikolaos Ziogas, <b>Tal Ben-Nun</b>, Guillermo Indalecio Fernandez, Timo Schneider, Torsten Hoefler.<br />
+                  In <i>Supercomputing (SC'19)</i>, November 2019.<br />
+                  <b>ACM Gordon Bell Prize.</b>
+                </p>
+              </li>
+              
+              <li>
+                <p>
+                  <a href="https://spcl.inf.ethz.ch/Publications/.pdf/matchings-fpga.pdf">Substream-Centric Maximum Matchings on FPGA</a><br />
+                  Maciej Besta, Marc Fischer, <b>Tal Ben-Nun</b>, Johannes De Fine Licht, Torsten Hoefler.<br />
+                  In <i>Proceedings of the 27th ACM/SIGDA International Symposium on Field-Programmable Gate Arrays (FPGA 2019)</i>, February 2019.<br />
+                  <b>Best paper nominee.</b>                  
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <a href="https://arxiv.org/abs/1806.07336">Neural Code Comprehension: A Learnable Representation of Code Semantics</a><br />
+                  <b>Tal Ben-Nun</b>, Alice Shoshana Jakobovits, Torsten Hoefler.<br />
+                  In <i>Neural Information Processing Symposium (NeurIPS 2018)</i>, December 2018.<br />
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <a href="https://htor.inf.ethz.ch/publications/img/ucudnn.pdf">Accelerating Deep Learning Frameworks with Micro-batches</a><br />
+                  Yosuke Oyama, <b>Tal Ben-Nun</b>, Torsten Hoefler, Satoshi Matsuoka.<br />
+                  In <i>IEEE Cluster 2018</i>, September 2018.<br />
+                </p>
+              </li>
+              
+              <li>
+                <p>
+                  <a href="http://www.cs.huji.ac.il/~talbn/docs/afforest-ipdps18.pdf">Optimizing Parallel Graph Connectivity Computation via Subgraph Sampling</a><br />
+                  Michael Sutton, <b>Tal Ben-Nun</b>, Amnon Barak.<br />
+                  In <i>Proceedings of the 32nd IEEE International Parallel &amp; Distributed Processing Symposium (IPDPS 2018)</i>, May 2018.<br />
+                </p>
+              </li>
+
+              
+              <li>
+                <p>
+                  <a href="papers/gputlb-damon17.pdf">Big Data Causing Big (TLB) Problems: Taming Random Memory Accesses on the GPU</a><br />
+                  Tomas Karnagel, <b>Tal Ben-Nun</b>, Matthias Werner, Dirk Habich, Wolfgang Lehner.<br />
+                  In <i>Proceedings of the 13th International Workshop on Data Management on New Hardware (ACM DaMoN)</i>, May 2017.<br />
+                </p>
+              </li>
+              
+              <li>
+                <p>
+                  <a href="papers/groute-ppopp17.pdf">Groute: An Asynchronous Multi-GPU Programming Model for Irregular Computations</a><br />
+                  <b>Tal Ben-Nun</b>, Michael Sutton, Sreepathi Pai, Keshav Pingali.<br />
+                  In <i>ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming (PPoPP 2017)</i>, February 2017.<br />
+                  <b>Best paper nominee.</b>
+                </p>
+              </li>
+              
+              <li>
+                <p>
+                  <a href="papers/rg-jcim16.pdf">Reciprocal grids: a hierarchical algorithm for computing solution x-ray scattering curves from supramolecular complexes at high resolution</a><br />
+                  Avi Ginsburg, <b>Tal Ben-Nun</b>, Roi Asor, Asaf Shemesh, Israel Ringel, Uri Raviv.<br />
+                  In <i>ACS Journal of Chemical Information and Modeling (JCIM)</i>, August 2016.
+                </p>
+              </li>
+              
+              <li>
+                <p>
+                  <a href="papers/dso-jpdc16.pdf">Spline-Based Parallel Nonlinear Optimization of Function Sequences</a> <br />
+                  <b>Tal Ben-Nun</b>, Amnon Barak, Uri Raviv. <br />
+                  In <i>Elsevier Journal of Parallel and Distributed Computing (JPDC)</i>, April 2016.
+                </p>
+              </li>
+              
+              <li>
+                <p>
+                  <a href="papers/maps-multi-sc15.pdf">Memory Access Patterns: The Missing Piece of the Multi-GPU Puzzle</a> <br />
+                  <b>Tal Ben-Nun</b>, Ely Levy, Amnon Barak, Eri Rubin. <br />
+                  In <i>IEEE/ACM International Conference for High Performance Computing, Networking, Storage and Analysis (SC15)</i>, November 2015.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <a href="papers/arbitraryed-ijch16.pdf">Solution X-Ray Scattering Form-Factors with Arbitrary Electron Density Profiles and Polydispersity Distributions</a> <br />
+                  <b>Tal Ben-Nun</b>, Roi Asor, Avi Ginsburg, Uri Raviv. <br />
+                  In <i>Israel Journal of Chemistry (IJC)</i>, November 2015.
+                </p>
+              </li>
+
+
+              <li>
+                <p>
+                  <a href="http://dl.acm.org/authorize?N83410" title="MAPS: Optimizing Massively Parallel Applications Using Device-Level Memory Abstraction">MAPS: Optimizing Massively Parallel Applications Using Device-Level Memory Abstraction</a> <br />
+                  Eri Rubin, Ely Levy, Amnon Barak, <b>Tal Ben-Nun</b>. <br />
+                  In <i>ACM Transactions on Architecture and Code Optimization (TACO)</i>, January 2015.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <a href="http://scripts.iucr.org/cgi-bin/paper?aj5158">X+: A Comprehensive Computationally Accelerated Structure Analysis Tool for Solution X-ray Scattering from Supramolecular Self-assemblies</a> <br />
+                  <b>Tal Ben-Nun</b>, Avi Ginsburg, Pablo Szekely, Uri Raviv. <br />
+                  In <i>Journal of Applied Crystallography</i>. Volume 43 (6), December 2010.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <a href="docs/MGL-PPAAC10.pdf">A Package for OpenCL Based Heterogeneous Computing on Clusters with Many GPU Devices</a> <br />
+                  Amnon Barak, <b>Tal Ben-Nun</b>, Ely Levy, Amnon Shiloh. <br />
+                  In the <i>PPAAC</i> workshop, <i>IEEE Cluster 2010</i>, September 2010.
+                </p>
+              </li>
+
+
+              <li>
+                <p>
+                  <a href="http://pubs.acs.org/doi/abs/10.1021/la101433t">Solution X-ray Scattering Form Factors of Supramolecular Self-Assembled Structures</a> <br />
+                  <b>Tal Ben-Nun</b>, Pablo Szekely, Avi Ginsburg, Uri Raviv. <br />
+                  In the <i>Langmuir</i> journal. Volume 26 (16), July 2010.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <a href="docs/RSVT-SYSTOR10.pdf">Design and Implementation of a 
+                    Generic Resource Sharing Virtual Time Dispatcher</a> <br />
+                  <b>Tal Ben-Nun</b>, Yoav Etsion, Dror G. Feitelson. <br />
+                  In <i>SYSTOR 2010</i>, May 2010.
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <a href="docs/GSched09SMTPS.pdf">A Global Scheduling Framework for 
+                    Virtualization Environments</a> <br />
+                  Yoav Etsion, <b>Tal Ben-Nun</b>, Dror G. Feitelson. <br />
+                  In 5th <i>Intl. Workshop System Management Techniques, Processes,
+                    and Services</i>, May 2009. <br />
+                  <b>Best student paper.</b>
+                </p>
+              </li>
+            </ul>
+          </div>
+          
+          <div id="contact" class="section scrollspy">
+            <h5 class="header">Contact</h5>
+            <br />
+            E-Mail Address: 
+            talbn<img src="a-aa-t.jpg" height="14px"/>llnl gov<br />
+          </div>
+        </div>
+        <div class="col hide-on-small-only m3 l2">
+          <ul class="section table-of-contents fixed">
+            <li><a href="#home">Home</a></li>
+			<li><a href="#research">Research</a></li>
+            <li><a href="#software">Software</a></li>
+            <li><a href="#pubs">Publications</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer><center>
+	Made with <a href="https://jquery.com/">jQuery</a> and <a href="https://materializecss.com/">Materialize</a>.
+    </center></footer>
+    <!--  Scripts-->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/init.js"></script>
+
+  </body>
+</html>

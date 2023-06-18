@@ -1,0 +1,169 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+.header {
+    color: #000;
+}
+
+main {
+  padding-left: 240px; 
+}
+
+.rcards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.research-card {
+	display: flex;
+    height: 200px;
+    max-width: 600px;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+.rcard-image{
+	object-fit: cover;
+    width: 240px;
+	height: 100%;
+}
+
+.rcard-contents { 
+	max-width: 350px;
+}
+
+.rcard-text {
+	font-size: 14px;
+	margin-right: 10px;
+}
+
+.close-button {
+	position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+.rcard-reveal {
+	padding-top: 0px !important;
+	padding-left: 15px !important;
+	padding-right: 35px !important;
+	padding-bottom: 0px !important;
+	overflow-y: hidden !important;
+}
+
+.rcardex {
+}
+
+.rcardex>li {
+	list-style-type: disclosure-closed !important;
+    margin-left: 2em;
+}
+
+@media only screen and (max-width : 256px) {
+  .card-image{
+	  display: none;
+  }
+  .rcard-image{
+	  display: none;
+  }
+}
+
+@media only screen and (max-width : 1200px) {
+	.research-card {
+		display: block;
+		max-width: 300px;
+		height: 450px;
+		margin-right: 15px;
+		margin-left: 15px;
+	}
+	.rcard-image{
+		object-fit: cover;
+		height: 300px;
+		width: 100%;
+	}
+	
+	.close-button {
+		position: absolute;
+		top: inherit;
+		bottom: 25px;
+		right: 25px;
+	}
+	
+	.rcard-text {
+		margin-right: 0px;
+	}
+}
+
+@media only screen and (max-width : 1075px) {
+  main {
+    padding-left: 0; 
+	overflow-x: hidden;
+  } 
+}
+
+
+.bgg {
+
+babackground: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(204,204,204,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, rgba(255,255,255,1) 0%,rgba(204,204,204,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, rgba(255,255,255,1) 0%,rgba(204,204,204,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cccccc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+background-attachment: fixed;
+}
+
+#logo-container {
+    height: inherit;
+    margin-bottom: 10px;
+}
+
+ul.side-nav.fixed li.logo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.side-nav {	
+	background-color: #444;
+}
+
+.side-nav li {
+	padding: 0 0px;
+}
+
+.side-nav li:hover, .side-nav li.active  {
+	background-color: #666;	
+}
+
+.side-nav.fixed a {
+	line-height: 64px;
+	color: #fff;
+}
+
+.collapsible-body ul {
+    background-color: #fff;
+}
+
+.side-nav .collapsible-body li a {
+	color: #000;
+}
+
+.collapsible-body li:hover, .collapsible-body li.active {
+	background-color: #ddd;
+}
+
+
+.section ul.cc li {
+	list-style-type: circle;
+}
